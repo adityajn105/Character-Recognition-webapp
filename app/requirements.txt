@@ -1,0 +1,4 @@
+Flask
+zappa
+keras
+python-opencv
