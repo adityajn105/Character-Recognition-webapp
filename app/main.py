@@ -7,9 +7,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('app.html',data = {'status':False} ) 
+	return render_template('characterRecognizer.html',data = {'status':False} ) 
 
-@app.route('/predict', methods = ['POST'])
+@app.route('/charrecognize', methods = ['POST'])
 def predict():
 	if request.method == 'POST':
 		data = request.get_json()

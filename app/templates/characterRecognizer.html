@@ -83,7 +83,7 @@
 		    // Sending the image data to Server
 		    $.ajax({
 		        type: 'POST',
-		        url: '/predict',
+		        url: '/charrecognize',
 		        data: JSON.stringify({ image : Pic }),
 		        contentType: 'application/json;charset=UTF-8',
 		        dataType: 'json',
@@ -130,6 +130,13 @@
 			        <div id="result" class="alert alert-success" style="display: none">
 					   Looks like, You have entered a : <strong id="pred"></strong>
 					</div>
+	    		</div>
+	    	</div>
+	    	<div class="row" style="margin-top: 2%">
+	    		<div class="col-md-12 text-center">
+	    			<a href="https://github.com/adityajn105/Character-Recognition-webapp">
+	    				<button class="btn btn-success">View Project/Code on Github.</button>
+	    			</a>
 	    		</div>
 	    	</div>
     	</div>
