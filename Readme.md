@@ -19,7 +19,7 @@ Run the notebook named CNN_model.ipynb and model will be saved as model_cnn_1.h5
 
 ### Running the app
 Use the following command in the app directory to run the app.
-> python3 __init__.py
+> ``` python3 __init__.py ```
 
 ## Future Improvements
 1. The app still takes some time to recognize image. So one thing is to make the pipeline fast.
@@ -50,8 +50,7 @@ We have 4 steps for convolution:
 * Walk your window across your filtered images
 * From each window, take the maximum value
 
-**Fully Connected Layer**
-So to get the time-frame in one picture we can reduce the image size after passing the input through 3 layers.
+**Fully Connected Layer**: So to get the time-frame in one picture we can reduce the image size after passing the input through 3 layers.
 We can further reduce the image to something lesser. We need to perform the 3 operations in an iteration after the first pass and so on. 
 The last layers in the network are fully connected, meaning that neurons of preceding layers are connected to every neuron in subsequent layers. Also, fully connected layer is the final layer where the classification actually happens. Here we take our filtered and shrinked images and put them into one single list.
 
@@ -62,5 +61,5 @@ The last layers in the network are fully connected, meaning that neurons of prec
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/adityajn105/Character-Recognition-webapp/blob/master/LICENSE) file for details
 
 ## Must Read
-[Analytics Vidya Explaination](https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-network-cnn/)
-[Edureka article](https://www.edureka.co/blog/convolutional-neural-network/)
+1. [Analytics Vidya Explaination](https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-network-cnn/)
+2. [Edureka article](https://www.edureka.co/blog/convolutional-neural-network/)
